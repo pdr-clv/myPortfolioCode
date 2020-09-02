@@ -4,20 +4,25 @@ import { AboutPageStyles,
   PageContainer
   } from './about.styles';
 
+import { LinkStdr } from './about.styles';
+
 const AboutPage = () => {
   return(
     <AboutPageStyles>
       <PageContainer>
       <h1>About me</h1>
-      <p>Hi! my name is Pedro. I am full stuck web developer. Here is my story about how I became developer.</p>
-      <p><b><i className="far fa-circle"></i> My first steps developing:</b>  More than 10 years in automotive Industry, managing many data in Excel Worksheets. During this time I developed Windows Apps with Visual Basic and Access using mySQL local databases. Projects samples: PRODUCTION STUDY and RECYCLE V1</p>
-      <p><b><i className="far fa-circle"></i> Static web developing:</b> In 2017 I started the basics of FrontEnd. HTML5, CSS3 (responsive, Bootstrap), JS. Project samples VETERYNARY WEB and LANGUAGE SCHOOL</p>
-      <p><b><i className="far fa-circle"></i> Dinamic web developing:</b> To became full stuck developer, I focused more in JS (JQuery ES6), and also backEnd progamming PHP (mySQL CRUD and asynchronous calls with Ajax). Project sample: RECICLAJES V2</p>
-      <p><b><i className="far fa-circle"></i> Developing with new frameworks:</b> I am using React.js to develop frontEnd structure, separated and perfectly integrated in the backEnd Node.js + Mongodb and Firebase (REST API). Project sample: CROWN CLOTHING and MEMORY GAME</p>
-      <p>This trip is just began, Web developing is growing a lot. WebApps are the base to create common applications for web, phones and other platforms. You must be ready to keep on learning new Web features.</p>
-      <p>Conding is a challenge ....Coding is my passion ... ;)</p>
+      <p>Hi! my name is Pedro, I am Spanish full stuck web developer. I was graduated in Physics for the University of Valencia, and now located in Moscow . Here is my story about how I became developer.</p>
+      <ul>
+        <li><b>My first steps developing:</b> In University I already used software to do researches, but real start was when I worked in automotive Industry. I managed huge data in Excel Worksheets. During this time I developed Windows Apps with Visual Basic and Access using mySQL local databases.</li>
+        <li><b>Static web developing:</b> In 2017 I started the basics of FrontEnd. HTML5, CSS3 (responsive, Bootstrap), JS.</li>
+        <li><b>Dinamic web developing:</b> To became full stuck developer, I focused more in JS (JQuery ES6), and also backEnd progamming PHP (mySQL CRUD and asynchronous calls with Ajax).</li>
+        <li><b>Developing with new frameworks:</b> Use of React.js to develop frontEnd structure, separated and perfectly integrated in the backEnd Node.js + Mongodb and Firebase (REST API).</li>
+      </ul>
+      <p>This learning path can be seen in the progress of <LinkStdr smooth to="#myprojects">my projects</LinkStdr>  For further information, have a look and download <a href="#myprojects">my C.V.</a></p>
+      <p>¡Welcome on board! The trip is just began, Web developing is growing a lot. WebApps are the base for phones and other platforms apps. You must be ready to keep on learning new Web features.</p>
+      <p>Coding is a challenge ....Coding is my passion ... ;)</p>
       </PageContainer>
     </AboutPageStyles>
-)};
+  )};
 
 export default AboutPage;

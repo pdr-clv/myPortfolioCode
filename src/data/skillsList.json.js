@@ -2,7 +2,7 @@ const skillsList = [{
   name: 'FrontEnd',
   skills: [{iconFontawesome: 'fab fa-html5', name: 'Html'},
     {iconFontawesome: 'fab fa-css3-alt', name: 'Css', subSkills:['Bootstrap','Responsive', 'Sass']},
-    {iconFontawesome: 'fab fa-js-square', name: 'Js', subSkills:['ES6']},
+    {iconFontawesome: 'fab fa-js-square', name: 'Js', subSkills:['ES6','Promises','API fetch']},
     {name: 'React', iconFontawesome: 'fab fa-react', subSkills:['Redux','Hooks','Jest','Styled-components']},
     {name: 'jQuery', subSkills:['Ajax Request']}]
   },

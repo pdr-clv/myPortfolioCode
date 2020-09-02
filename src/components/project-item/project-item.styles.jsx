@@ -44,14 +44,32 @@ export const ProjectText = styled.div`
 
 `;
 
-export const ProyectsLinksDiv = styled.div`
+const ViewProjectLinks = css`
+  background-color: rgba(0,0,0,0.7);
+  color:orange;
+  font-size:0.9em;
+  padding:4px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
 
-  display: flex;
-  justify-content: space-around;
-  padding: 10px;
+  &:hover {
+    background-color: orange;
+    color:black;
+  }
+`;
+
+export const ProjectLinksDiv = styled.div`
+
+  padding: 15px;
+
   a {
-    color:rgb(110,110,110);
-    font-size:0.9em;
+    ${ViewProjectLinks};
+  }
+
+  span {
+    cursor: pointer;
+    ${ViewProjectLinks};
   }
 
 `;
@@ -81,19 +99,20 @@ const getSpanHidden = (props) => {
 }
 
 export const Description = styled(DetectableOverflow)`
-  height: 135px;
+  line-height: 1.1em;
+  height: 6.6em;
   margin: 5px;
   position:relative; /*this is the key*/
   z-index:10;
+  overflow: hidden;
   span {
-    display: none
+    display: none;
   }
 
   ${getDivFull}
   ${getSpanHidden}
 
 `;
-
 
 const hideSpan = css`
 

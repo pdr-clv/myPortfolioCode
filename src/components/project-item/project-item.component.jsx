@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import slugify from 'react-slugify';
 
+import ProjectLinks from './project-links-div.component';
 import Badge from '../badge/badge.component';
 
 import {
@@ -8,8 +9,7 @@ import {
   ProjectImg,
   ProjectText,
   BadgeWrap,
-  Description,
-  ProyectsLinksDiv
+  Description
 } from './project-item.styles';
 
 const ProjectItem = (props) =>{
@@ -17,7 +17,7 @@ const ProjectItem = (props) =>{
   const [overFloaded, setOverFload] = useState(false);
   //Description div full Height if you want to read all content of div because is overfloaded
   const [fullHeightDescription, setFullHeight] = useState(false);
-  const {name,imgUrl,description,appLink,gitHubLink}=props;
+  const {name,imgUrl,description,projectLinks,setModal,setimgUrl}=props;
   let { skills }= props;
   if (!skills) {
     skills = [];
@@ -36,10 +36,10 @@ const ProjectItem = (props) =>{
         onClick = {()=>setFullHeight(true)}
       >More...</span>
     </Description>
-    <ProyectsLinksDiv>
-      <a href={appLink}>View sample</a>
-      <a href={gitHubLink}>github Code</a>
-    </ProyectsLinksDiv>
+    <ProjectLinks 
+      projectLinks = {projectLinks}
+      setModal = {setModal}
+      setimgUrl ={setimgUrl} />
     <BadgeWrap>
       {skills.map(skillElement => 
         <Badge 

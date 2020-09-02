@@ -1,6 +1,7 @@
 import React,{ useState} from 'react';
 
 //import navBarContent from './nav-bar-data';
+import navBarContent from '../../data/nav-barList.json.js';
 
 import { 
   NavBarStyled,
@@ -25,26 +26,21 @@ const NavBar = () =>{
           <OpenBtn onClick={()=>setShowNav(!showNav)}>
             <span>&#9776;</span>
           </OpenBtn>
-          <Logo>My PortFolio</Logo>
+          <Logo><i className="fas fa-chalkboard"></i> My PortFolio</Logo>
         </LogoContainer>
         <MenuLinksContainer>
           <MenuLinks showNav={showNav}>
             <CloseBtn onClick={()=>setShowNav(!showNav)}>
               <span>&times;</span>
             </CloseBtn>
-            <LinkNav smooth
-              to='#main'
-              onClick={()=>setShowNav(false)}
-              >Home</LinkNav>
-            <LinkNav smooth 
-              to='#about'
-              onClick={()=>setShowNav(false)}>About</LinkNav>
-            <LinkNav smooth 
-              to='#skills'
-              onClick={()=>setShowNav(false)}>Skills</LinkNav>
-            <LinkNav smooth 
-              to='#myprojects'
-              onClick={()=>setShowNav(false)}>My Projects</LinkNav>
+            {
+              navBarContent.map((element,key) => <LinkNav 
+                smooth 
+                to = {`#${element.linkTo}`}
+                key = {key}>
+                  {element.name}
+                </LinkNav>)
+            }
           </MenuLinks>
           <MenuLinksBackground showNav={showNav} 
           onClick={()=>setShowNav(false)}/> 

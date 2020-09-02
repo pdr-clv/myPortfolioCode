@@ -78,7 +78,7 @@ export const Photo=styled.div`
 
   div{
   border-radius:50%;
-  border:3px solid white;
+  border:3px solid orange;
   height:200px;
   width:200px;
   background-image: url('https://res.cloudinary.com/dg5pircnj/image/upload/v1597479069/PortfolioApp/profile-picture_wneqqc.jpg');
@@ -127,15 +127,25 @@ export const Description=styled.div`
 `;
 
 export const SocialLinks = styled.div`
-  display:flex;
-  justify-content: space-around;
+  div   {
+    width:60%;
+    margin: auto;
+    display:flex;
+    justify-content: space-around;
 
-  a {
-    font-size: 2em;
-    color: rgb(100,100,100);
+    a {
+      font-size: 2em;
+      color: rgb(100,100,100);
+    }
+
+    a:hover {
+      color: orange;
+    }
+
+    @media screen and (max-width: 425px) {
+      width:95%;
+    }
   }
 
-  a:hover {
-    color: orange;
-  }
+
 `;

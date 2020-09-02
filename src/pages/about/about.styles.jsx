@@ -1,4 +1,5 @@
 import styled  from 'styled-components';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export const AboutPageStyles = styled.div`
   min-height:100vh;
@@ -27,6 +28,10 @@ export const PageContainer = styled.div`
     width:95%;
     margin:auto;
     margin-bottom:10px;
+
+    a {
+      color:orange;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -35,3 +40,9 @@ export const PageContainer = styled.div`
     width:90%;
   }
 `;
+
+export const LinkStdr = styled(Link)`
+  color:orange;
+`;
+
+

@@ -28,7 +28,6 @@ export const NavBarStyled = styled.div`
   width:100%; /* if we want to have navBar fixed on top */
   background-color: rgba(0,0,0,0.6);
   color: white;
-  height:50px;
 
   @media screen and (max-width: 768px) {
   background-color:transparent;
@@ -80,8 +79,9 @@ export const CloseBtn = styled.div`
 `;
 
 export const Logo = styled.div`
+  color:orange;
   text-align:center;
-  font-size:1.4em;
+  font-size:1em;
   margin:auto 0;
   font-weight: bold;
   align-items: center;
@@ -126,7 +126,7 @@ export const MenuLinks = styled.div`
   }
   .a{
   color: black;
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: center;
   padding: 14px;
   text-decoration: none;
@@ -142,9 +142,10 @@ export const MenuLinks = styled.div`
 `;
 
 export const MenuLinksBackground = styled.div`
-  display:none;
+  display:${({ showNav }) => showNav ? 'inline' : 'none'};
+  
   @media screen and (max-width: 768px) {
-    display:inline;
+    /*display:inline;*/
     width:50%;
     height:100vh;
     background-color:rgba(0,0,0,0.7);
@@ -170,10 +171,11 @@ export const LinkNav = styled(Link)`
 
   
   color: white;
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: center;
   padding: 14px;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:hover{
     ${selected}
