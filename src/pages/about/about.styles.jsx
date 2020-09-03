@@ -1,5 +1,4 @@
 import styled  from 'styled-components';
-import { HashLink as Link } from 'react-router-hash-link';
 
 export const AboutPageStyles = styled.div`
   min-height:100vh;
