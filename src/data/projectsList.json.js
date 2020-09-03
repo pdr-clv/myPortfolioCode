@@ -29,16 +29,16 @@ const projectsList = [{
   { 
     name: 'Recycling V2',
     imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1598883960/PortfolioApp/RecyclingV2_zxrz5f.jpg',
-    description: 'Record and print all your invoices for "Recycling Ltd." company. Web site with Back End PHP + mySQL. AJAX Requests and Pagination. FPDF to create PDF invoices, and also Bootstrap for CSS styles.',
+    description: 'Record and print all your invoices for "Recycling Ltd." company. Website with backend PHP + mySQL. AJAX Requests and Pagination. FPDF to create PDF invoices, and also Bootstrap for CSS styles.',
     projectLinks: {    
       webLink:'https://reciclajes-eng.herokuapp.com/'
     } ,
-    skills: ['PHP','mySQL','pagination','JQuery','Ajax','Bootstrap', 'FPDF']
+    skills: ['PHP','mySQL','pagination','JQuery','Ajax','Bootstrap', 'PDF Reports']
   },
   { 
     name: 'Language School',
     imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1598887500/PortfolioApp/Language-school_ro16yn.jpg',
-    description: 'Simple and didactical responsive website, for test purposes. Static, pure front end, which contains only HTML5 and CSS, and just a bit of JS for the nav. This was my first website to practice all front end basics.',
+    description: 'Simple and didactical responsive website, for test purposes. Static, pure frontend, which contains only HTML5 and CSS, and just a bit of JS for the nav. My first website to practice all frontend fundamentals.',
     projectLinks: {    
       webLink:'https://pdr-clv-language-school.glitch.me/',
       gitCode:'https://github.com/pdr-clv/language-school'
@@ -47,12 +47,21 @@ const projectsList = [{
   },
   { 
     name: 'PRODUCTION STUDY',
-    imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1599030176/PortfolioApp/production-study_r0qugr.jpg',
-    description: 'Access application to record deadline dates for production items. Easy items search with information of packaging, breakdown reports and other details for production purposes.',
+    imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1599112875/PortfolioApp/production-study_at1eyj.jpg',
+    description: 'Check all deadline production items for your factory! MS Access application with a light database to work together your Excel Worksheet. Find production items information of packaging, breakdown reports and other details.',
     projectLinks: {    
-      picGallery:'https://res.cloudinary.com/dg5pircnj/image/upload/v1599030176/PortfolioApp/production-study_r0qugr.jpg'
+      picGallery:'https://res.cloudinary.com/dg5pircnj/image/upload/v1599112875/PortfolioApp/production-study_at1eyj.jpg'
     },
     skills: ['Access','VBA','mySQL']
+  },
+  { 
+    name: 'RECYCLING V1',
+    imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1599112885/PortfolioApp/reciclajes-v1_xtoqov.jpg',
+    description: 'Local database with data from small business. Save printable invoices. Generate data reports. Visual Basic application, running in Windows, keeping all important business information in one place.',
+    projectLinks: {    
+      picGallery:'https://res.cloudinary.com/dg5pircnj/image/upload/v1599112885/PortfolioApp/reciclajes-v1_xtoqov.jpg'
+    },
+    skills: ['Visual Basic','mySQL', 'Reports']
   }
 ];
 

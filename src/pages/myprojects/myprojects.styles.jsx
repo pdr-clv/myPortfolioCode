@@ -25,7 +25,7 @@ export const ProjectContainer = styled.div`
 export const ModalGallery = styled.div`
   position: fixed; /* Stay in place */
   z-index: 60; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -33,14 +33,13 @@ export const ModalGallery = styled.div`
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
-  display: none; /* Hidden by default */
   display: ${({ showModal }) => showModal ? 'block' : 'none'};
   animation-name: zoom;
   animation-duration: 0.6s;
   
   span {
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 35px;
     color: white;
     font-size: 40px;
