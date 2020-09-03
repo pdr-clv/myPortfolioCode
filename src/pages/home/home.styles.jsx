@@ -25,6 +25,10 @@ export const Title=styled.div`
     font-size:2.5em;
   }
 
+  span{
+    color:orange;
+  }
+
   @media screen and (max-width: 768px) {
     margin-bottom:50px;
   }
@@ -106,12 +110,10 @@ export const Description=styled.div`
   font-size:1.2em;
   padding:30px;
   text-align:left;
-  h1{
+  h2{
     text-transform: uppercase;
   }
-  span{
-    color:orange;
-  }
+
   p{
     width:90%;
   }

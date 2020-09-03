@@ -4,7 +4,6 @@ import { AboutPageStyles,
   PageContainer
   } from './about.styles';
 
-import { LinkStdr } from './about.styles';
 
 const AboutPage = () => {
   return(
@@ -18,7 +17,7 @@ const AboutPage = () => {
         <li><b>Dinamic web developing:</b> To became full stuck developer, I focused more in JS (JQuery ES6), and also backEnd progamming PHP (mySQL CRUD and asynchronous calls with Ajax).</li>
         <li><b>Developing with new frameworks:</b> Use of React.js to develop frontEnd structure, separated and perfectly integrated in the backEnd Node.js + Mongodb and Firebase (REST API).</li>
       </ul>
-      <p>This learning path can be seen in the progress of <LinkStdr smooth to="#myprojects">my projects</LinkStdr>  For further information, have a look and download <a href="#myprojects">my C.V.</a></p>
+      <p>For further information, have a look and download <a href="https://res.cloudinary.com/dg5pircnj/image/upload/v1599120818/PortfolioApp/CV-image_ailwfv.jpg">My CV</a></p>
       <p>¡Welcome on board! The trip is just began, Web developing is growing a lot. WebApps are the base for phones and other platforms apps. You must be ready to keep on learning new Web features.</p>
       <p>Coding is a challenge ....Coding is my passion ... ;)</p>
       </PageContainer>

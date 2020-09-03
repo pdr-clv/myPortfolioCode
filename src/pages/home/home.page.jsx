@@ -12,10 +12,10 @@ const HomePage = () => {
   return(
     <MainPageStyles>
       <PageContainer>
-        <Title><h1>Welcome to my Portfolio</h1></Title>
+        <Title><h1>Pedro <span>Calvo Herranz</span></h1></Title>
         <Content>
           <Description>
-            <h1>Pedro <span>Calvo Herranz</span></h1>
+            <h2>Welcome to my Portfolio</h2>
             <p>Hello, my name is Pedro. I am full stuck developer. Feel free to know more about me. </p>
             <SocialLinks>
               <div>

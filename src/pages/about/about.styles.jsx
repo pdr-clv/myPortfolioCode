@@ -30,8 +30,19 @@ export const PageContainer = styled.div`
     margin-bottom:10px;
 
     a {
-      color:orange;
+      border-radius:4px;
+      background-color:orange;
+      color:black;
+      padding: 2px;
+      text-decoration: none;
+
+
+      &:hover{
+        background-color:black;
+        color:orange;
+      }
     }
+
   }
 
   @media screen and (max-width: 768px) {
@@ -41,8 +52,6 @@ export const PageContainer = styled.div`
   }
 `;
 
-export const LinkStdr = styled(Link)`
-  color:orange;
-`;
+
 
 
