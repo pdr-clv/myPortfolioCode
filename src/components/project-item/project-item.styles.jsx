@@ -99,6 +99,7 @@ const getSpanHidden = (props) => {
 }
 
 export const Description = styled(DetectableOverflow)`
+  background-color:rgba(256,0,256,0.2);
   display:block;
   line-height: 1.1em;
   height: 6.6em;
