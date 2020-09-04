@@ -106,7 +106,7 @@ export const Description = styled(DetectableOverflow)`
   margin: 5px;
   position:relative; /*this is the key*/
   z-index:10;
-  overflow: hidden;
+  /*overflow: hidden;*/
   p {
     margin:0 5px;
     background-color: rgba(145,87,0,0.4);
