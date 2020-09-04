@@ -27,7 +27,7 @@ const ProjectItem = (props) =>{
   <ProjectText>
     <h4>{name.toUpperCase()}</h4>
     <Description
-      style = {{width:"97%"}}
+      style = {{width:"98%"}}
       overFloaded = {overFloaded}
       fullHeightDescription= {fullHeightDescription}
       onChange = {()=>setOverFload(!overFloaded)}>
