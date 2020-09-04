@@ -10,16 +10,16 @@ export const Title = styled.h1`
 `;
 
 export const ProjectContainer = styled.div`
-  font-size:1em;
+  /*font-size:1em;*/
   min-height:550px;
   max-width: 1200px;
   margin: auto;
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  @media screen and (max-width: 425px) {
+  /*@media screen and (max-width: 425px) {
     font-size:0.8em;
-  }
+  }*/
 `;
 
 export const ModalGallery = styled.div`
