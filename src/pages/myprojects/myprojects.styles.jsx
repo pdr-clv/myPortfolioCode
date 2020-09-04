@@ -10,16 +10,14 @@ export const Title = styled.h1`
 `;
 
 export const ProjectContainer = styled.div`
-  /*font-size:1em;*/
+  font-size:1em;
   min-height:550px;
   max-width: 1200px;
   margin: auto;
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  /*@media screen and (max-width: 425px) {
-    font-size:0.8em;
-  }*/
+
 `;
 
 export const ModalGallery = styled.div`
@@ -60,6 +58,5 @@ export const GalleryPicture = styled.img`
   display:block;
   width:auto;
   max-width: 95%;
-  /*content:url('https://res.cloudinary.com/dg5pircnj/image/upload/v1597758449/PortfolioApp/memory-app-pic_mmefbs.jpg');*/
   content:${({ imgUrlModal }) => `url(${imgUrlModal})`};
 `;

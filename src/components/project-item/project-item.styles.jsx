@@ -99,21 +99,18 @@ const getSpanHidden = (props) => {
 }
 
 export const Description = styled(DetectableOverflow)`
-  background-color:rgba(256,0,256,0.2);
   display:block;
   line-height: 1.1em;
   height: 6.6em;
   margin: 5px;
   position:relative; /*this is the key*/
   z-index:10;
-  /*overflow: hidden;*/
+  overflow: hidden;
   p {
     margin:0 5px;
-    background-color: rgba(145,87,0,0.4);
   }
   span {
     display: none;
-    visibility:hidden;
     z-index:20;
     cursor: pointer;
     position:absolute;
@@ -129,6 +126,11 @@ export const Description = styled(DetectableOverflow)`
   ${getDivFull}
   ${getSpanHidden}
 
+  @media screen and (max-width: 425px) {
+    font-size:0.8em;
+    line-height: 1em;
+    height: 6em;
+  }
 `;
 
 const hideSpanMore = css`
@@ -137,7 +139,6 @@ const hideSpanMore = css`
 
   span {
     display: none;
-    visibility: hidden;
   }
 `;
 
@@ -145,7 +146,6 @@ const showSpanMore = css`
 
   span {
     display:block;
-    visibility: unset;
   }
 `;
 
