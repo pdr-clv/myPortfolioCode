@@ -119,8 +119,8 @@ export const Description = styled(DetectableOverflow)`
     position:absolute;
 	  font-weight:bold;
     width:100px;
-    bottom:0px;
-    right:0px;
+    bottom:2px;
+    right:2px;
 	  border:1px solid white;
     background-color: rgb(35,35,35);
     text-align: center;
