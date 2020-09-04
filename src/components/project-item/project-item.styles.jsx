@@ -87,18 +87,19 @@ export const BadgeWrap = styled.div`
 const getDivFull = (props) => {
   const { overFloaded } = props;
   if (overFloaded) {
-    return floadedStyles;
+    return showSpanMore;
   }
 }
 
 const getSpanHidden = (props) => {
   const { fullHeightDescription } = props
   if (fullHeightDescription) {
-    return hideSpan;
+    return hideSpanMore;
   }
 }
 
 export const Description = styled(DetectableOverflow)`
+  display:block;
   line-height: 1.1em;
   height: 6.6em;
   margin: 5px;
@@ -106,28 +107,6 @@ export const Description = styled(DetectableOverflow)`
   z-index:10;
   overflow: hidden;
   span {
-    display: none;
-  }
-
-  ${getDivFull}
-  ${getSpanHidden}
-
-`;
-
-const hideSpan = css`
-
-  display:block;
-  height: auto;
-
-  span {
-    display: none;
-  }
-`;
-
-const floadedStyles = css`
-
-  span {
-    display:block;
     z-index:20;
     cursor: pointer;
     position:absolute;
@@ -138,6 +117,28 @@ const floadedStyles = css`
 	  border:1px solid white;
     background-color: rgb(35,35,35);
     text-align: center;
+    display: none;
+  }
+
+  ${getDivFull}
+  ${getSpanHidden}
+
+`;
+
+const hideSpanMore = css`
+
+  height: auto;
+
+  span {
+    display: none;
+  }
+`;
+
+const showSpanMore = css`
+
+  span {
+    display:block;
+    
   }
 `;
 

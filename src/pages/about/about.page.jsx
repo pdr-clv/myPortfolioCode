@@ -18,7 +18,7 @@ const AboutPage = () => {
         <li><b>Developing with new frameworks:</b> Use of React.js to develop frontEnd structure, separated and perfectly integrated in the backEnd Node.js + Mongodb and Firebase (REST API).</li>
       </ul>
       <p>For further information, have a look and download <a href="https://res.cloudinary.com/dg5pircnj/image/upload/v1599120818/PortfolioApp/CV-image_ailwfv.jpg">My CV</a></p>
-      <p>¡Welcome on board! The trip is just began, Web developing is growing a lot. WebApps are the base for phones and other platforms apps. You must be ready to keep on learning new Web features.</p>
+      <p>¡Welcome on board! The trip is just began, Web developing is growing a lot. WebApps are the base for phone and other platform apps. You must be ready to keep on learning new Web features.</p>
       <p>Coding is a challenge ....Coding is my passion ... ;)</p>
       </PageContainer>
     </AboutPageStyles>

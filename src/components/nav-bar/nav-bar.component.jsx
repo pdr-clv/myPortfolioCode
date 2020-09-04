@@ -37,6 +37,7 @@ const NavBar = () =>{
               navBarContent.map((element,key) => <LinkNav 
                 smooth 
                 to = {`#${element.linkTo}`}
+                onClick={()=>setShowNav(!showNav)}
                 key = {key}>
                   {element.name}
                 </LinkNav>)
