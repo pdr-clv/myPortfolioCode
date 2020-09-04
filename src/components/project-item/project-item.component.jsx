@@ -31,7 +31,7 @@ const ProjectItem = (props) =>{
       overFloaded = {overFloaded}
       fullHeightDescription= {fullHeightDescription}
       onChange = {()=>setOverFload(!overFloaded)}>
-      {description}
+      <p>{description}</p>
       <span 
         onClick = {()=>setFullHeight(true)}
       >More...</span>
