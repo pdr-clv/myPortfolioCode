@@ -112,6 +112,8 @@ export const Description = styled(DetectableOverflow)`
     background-color: rgba(145,87,0,0.4);
   }
   span {
+    display: none;
+    visibility:hidden;
     z-index:20;
     cursor: pointer;
     position:absolute;
@@ -122,7 +124,6 @@ export const Description = styled(DetectableOverflow)`
 	  border:1px solid white;
     background-color: rgb(35,35,35);
     text-align: center;
-    display: none;
   }
 
   ${getDivFull}
@@ -136,6 +137,7 @@ const hideSpanMore = css`
 
   span {
     display: none;
+    visibility: hidden;
   }
 `;
 
@@ -143,7 +145,7 @@ const showSpanMore = css`
 
   span {
     display:block;
-    
+    visibility: unset;
   }
 `;
 
