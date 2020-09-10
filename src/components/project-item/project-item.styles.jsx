@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import DetectableOverflow from 'react-detectable-overflow';
 
 export const ProjectItemStyled = styled.div`
   background-color:rgba(256,256,256,0.1);
@@ -98,7 +97,7 @@ const getSpanHidden = (props) => {
   }
 }
 
-export const Description = styled(DetectableOverflow)`
+export const Description = styled.div`
   display:block;
   line-height: 1.1em;
   height: 6.6em;
