@@ -12,6 +12,7 @@ export const MainPageStyles = styled.div`
 `;
 
 export const PageContainer = styled.div`
+  padding: 45px 0;
   margin:auto;
   display:flex;
   flex-direction:column;

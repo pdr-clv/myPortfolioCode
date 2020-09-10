@@ -15,7 +15,14 @@ const ProjectLinks = (props) => {
     {
       Object.keys(projectLinks).map(key => {
         if (key === 'webLink') {
-          return <a href={projectLinks[key] } key = { key }><i className="fas fa-link"></i> Sample</a>
+          return <a 
+              href={projectLinks[key] } 
+              key = { key }
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <i className="fas fa-link"></i> Demo
+            </a>
         } if (key === 'picGallery') {
           return <span 
             key = {key}

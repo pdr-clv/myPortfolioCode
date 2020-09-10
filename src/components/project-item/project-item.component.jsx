@@ -69,7 +69,24 @@ const ProjectItem = (props) =>{
   };
 
   return (<ProjectItemStyled>
-  <ProjectImg imgUrl={imgUrl}/>
+    { projectLinks.webLink && <a 
+          href= { projectLinks.webLink } 
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <ProjectImg imgUrl={imgUrl}/>
+      </a>
+    }
+    { projectLinks.picGallery && 
+      <ProjectImg 
+        onClick={()=>{
+          setModal();
+          setimgUrl(`${projectLinks.picGallery}`)
+          }
+        }
+        imgUrl={imgUrl}
+      />
+    }
   <ProjectText>
     <h4>{name.toUpperCase()}</h4>
     <Description

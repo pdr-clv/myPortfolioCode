@@ -32,6 +32,7 @@ export const ProjectImg = styled.div`
   background-size: cover;
   background-position: center;
   background-image: url(${getUrlImg});
+  cursor: pointer;
 `;
 
 export const ProjectText = styled.div`
