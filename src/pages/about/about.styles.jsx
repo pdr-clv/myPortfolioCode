@@ -16,9 +16,13 @@ export const AboutPageStyles = styled.div`
 `;
 
 export const PageContainer = styled.div`
+  text-align: justify;
   margin-right:30px;
   background-color:rgba(256,256,256,0.1);
   width:70%;
+  ul{
+    margin-right:20px;
+  }
   h1{
     text-align: center;
     color: orange;

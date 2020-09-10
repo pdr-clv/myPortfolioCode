@@ -98,15 +98,18 @@ const getSpanHidden = (props) => {
 }
 
 export const Description = styled.div`
+  background-color:rgba(256,0,0,0.3);
   display:block;
   line-height: 1.1em;
   height: 6.6em;
   margin: 5px;
   position:relative; /*this is the key*/
   z-index:10;
-  overflow: hidden;
+/*  overflow: hidden;*/
   p {
+    background-color: rgba(0,256,256,0.3);
     margin:0 5px;
+    text-align: justify;
   }
   span {
     display: none;

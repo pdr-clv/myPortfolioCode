@@ -71,6 +71,10 @@ const ProjectItem = (props) =>{
   <ProjectImg imgUrl={imgUrl}/>
   <ProjectText>
     <h4>{name.toUpperCase()}</h4>
+    <div>
+      <span>Size P width: {sizeP.width} height: {sizeP.height} </span>
+      <span>Size Div width: {sizeDiv.width} height: {sizeDiv.height} </span>
+    </div>
     <Description
       ref={elementDiv}
       overFloaded = {overFloaded}
