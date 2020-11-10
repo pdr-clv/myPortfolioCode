@@ -1,4 +1,14 @@
 const projectsList = [{ 
+  name: 'facebook clone',
+  imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1605005777/PortfolioApp/facebook-clone-img_nhxvu3.jpg',
+  description: "Please, don't tell to Mark Zuckerberg, but this is a Facebook clone. User auth by Firebase. Log in, add posts and read other user posts. Practical case to improve react skills.",
+  projectLinks: {    
+    webLink:'https://socialnetwork-clone.herokuapp.com/',
+    gitCode:'https://github.com/pdr-clv/fb-clone'
+  } ,
+  skills: ['react','redux','hooks','styled components','firebase auth','firebase store']
+  },
+  { 
   name: 'online shop',
   imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1597480012/PortfolioApp/img-crwn-clothing_q3k8fh.jpg',
   description: 'E-commerse site with user authentication. Add items to your cart and pay by credit card. Practical case developed in course "Complete React Developer" using Stripe for credit card payment and Firebase like Backend.',
