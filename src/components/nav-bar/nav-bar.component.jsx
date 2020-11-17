@@ -1,7 +1,7 @@
 import React,{ useState} from 'react';
 
 //import navBarContent from './nav-bar-data';
-import navBarContent from '../../data/nav-barList.json.js';
+import { navBarContent } from '../../data/nav-barList.json.js';
 
 import { 
   NavBarStyled,
@@ -34,9 +34,8 @@ const NavBar = () =>{
               <span>&times;</span>
             </CloseBtn>
             {
-              navBarContent.map((element,key) => <LinkNav 
-                smooth 
-                to = {`#${element.linkTo}`}
+              navBarContent.map((element,key) => <LinkNav  
+                to = {`/${element.linkTo}`}
                 onClick={()=>setShowNav(!showNav)}
                 key = {key}>
                   {element.name}

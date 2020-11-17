@@ -3,12 +3,6 @@ import styled  from 'styled-components';
 export const ProjectPageContainer =styled.div`
 `;
 
-export const Title = styled.h1`
-  padding:50px 0 0 0;
-  text-align:center;
-  color: orange;
-`;
-
 export const ProjectContainer = styled.div`
   font-size:1em;
   min-height:550px;
@@ -59,4 +53,34 @@ export const GalleryPicture = styled.img`
   width:auto;
   max-width: 95%;
   content:${({ imgUrlModal }) => `url(${imgUrlModal})`};
+`;
+
+export const ProjectsBanner = styled.div`
+  background-color:rgba(256,256,256,0.1);
+  margin: 30px auto;
+  width: 95%;
+  max-width: 850px;
+
+  h1{
+    margin:0;
+    padding: 10px;
+    text-align: center;
+    background:	rgba(255,140,0,0.3);
+    color: orange;
+  }
+  p{
+    margin: 0;
+    padding: 15px;
+    font-size: 1.1em;
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 450px) {
+    h1{
+      font-size:1.3em;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
 `;

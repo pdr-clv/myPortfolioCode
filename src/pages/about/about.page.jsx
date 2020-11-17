@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { AboutPageStyles,
   PageContainer
@@ -6,6 +6,12 @@ import { AboutPageStyles,
 
 
 const AboutPage = () => {
+
+  //This is for footer links, if we click on them, automatically will scrollTo top.
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  });
+
   return(
     <AboutPageStyles>
       <PageContainer>

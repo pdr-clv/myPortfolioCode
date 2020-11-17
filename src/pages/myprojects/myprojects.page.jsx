@@ -7,9 +7,9 @@ import ProjectItem from '../../components/project-item/project-item.component';
 import {
   ProjectPageContainer,
   ProjectContainer,
-  Title,
   ModalGallery,
-  GalleryPicture
+  GalleryPicture,
+  ProjectsBanner
 } from './myprojects.styles';
 
 const MyProjectsPage = () =>{
@@ -17,7 +17,11 @@ const MyProjectsPage = () =>{
   const [imgUrlModal,setimgUrl] = useState(''); //for the modal with pictures gallery of application
   return(
   <ProjectPageContainer>
-    <Title>My projects</Title>
+    <ProjectsBanner>
+      <h1>What do I do?</h1>
+      <p>This is a list of my projects, click on them to view a demo. Projects are ordered by date in descending order. Nowadays I am focused to develop frontend with React, Hooks and styled components for styles.</p>
+    </ProjectsBanner>
+
     <ProjectContainer>
       {
         projectsList.map(project=>

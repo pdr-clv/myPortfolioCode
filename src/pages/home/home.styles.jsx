@@ -103,7 +103,6 @@ export const Photo=styled.div`
     div{
     }
   }
-
   
 `;
 
@@ -127,28 +126,4 @@ export const Description=styled.div`
     width:100%;
   }
   }
-`;
-
-export const SocialLinks = styled.div`
-  div   {
-    width:60%;
-    margin: auto;
-    display:flex;
-    justify-content: space-around;
-
-    a {
-      font-size: 2em;
-      color: rgb(100,100,100);
-    }
-
-    a:hover {
-      color: orange;
-    }
-
-    @media screen and (max-width: 425px) {
-      width:95%;
-    }
-  }
-
-
 `;
