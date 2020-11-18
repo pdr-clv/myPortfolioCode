@@ -1,4 +1,9 @@
-import styled  from 'styled-components';
+import styled, { keyframes }  from 'styled-components';
+
+const appearAnimation = keyframes`
+ 0%,30% { opacity: 0}
+ 100% { opacity: 1}
+`
 
 export const MainPageStyles = styled.div`
   min-height:100vh;
@@ -20,6 +25,8 @@ export const PageContainer = styled.div`
 
 export const Title=styled.div`
   margin-bottom:65px;
+  animation-name: ${appearAnimation};
+  animation-duration: 2s;
   h1{
     margin:0;
     text-align:center;
@@ -80,6 +87,7 @@ export const Photo=styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
+  animation: ${appearAnimation} 1.5s;
 
   div{
   border-radius:50%;

@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { AboutPageStyles,
-  PageContainer
-  } from './about.styles';
+import {AboutPageStyles,PageContainer} from './about.styles';
 
 
 const AboutPage = () => {
