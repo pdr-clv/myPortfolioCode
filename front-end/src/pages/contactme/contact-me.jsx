@@ -1,13 +1,17 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import {ContactStyles} from './contact-me.styles.jsx';
+import {ContactStyles, Notification} from './contact-me.styles.jsx';
+//import WithSpinner from '../../components/with-spinner/with-spinner.component';
+import { SpinnerContainer, SpinnerOverlay } from '../../components/with-spinner/with-spinner.styles';
 
 const ContactPage = () => {
 
   const [messageContent,setMessageContent] = useState({
     email:'',
     user:'',
-    message:''
+    message:'',
+    isPosting: false,
+    showNotification: false
   });
 
   const handleChange = (event) => {
@@ -16,9 +20,10 @@ const ContactPage = () => {
     setMessageContent({...messageContent,[name]:value});
   };
 
-  const { email, user, message } = messageContent;
+  const { email, user, message, isPosting, showNotification } = messageContent;
 
   const submitForm = async (e) =>{
+    setMessageContent({...messageContent, isPosting: true });
     e.preventDefault();
     const reqResult = await axios({
       url: 'sendmail',
@@ -29,41 +34,51 @@ const ContactPage = () => {
         message
       }
     });
-    console.log(reqResult);
+    
     if (reqResult.status === 200) {
-      alert('Message sent correctly, you will get soon a confirmation e-mail');
+      console.log(reqResult);
+      setMessageContent({...messageContent, isPosting: false, showNotification:true });
+
     } else {
+      setMessageContent({...messageContent, isPosting: false });
       alert('It ocurred an error. Message not sent');
     }
   };
 
   return (
-    <ContactStyles>
-      <form onSubmit={submitForm}>
-        <input 
-          type="text" 
-          name="email" 
-          value={ email } 
-          placeholder='Email Address'
-          onChange={ handleChange }
-        />
-        <input 
-          type="text" 
-          name="user" 
-          value= { user}
-          placeholder='Enter your name'
-          onChange={ handleChange }
-        />
-        <textarea 
-          type="text" 
-          name="message" 
-          value={ message } 
-          placeholder='Type your message'
-          onChange={ handleChange }
-        />
-        <input type="submit" value='Submit'/>
-      </form>
-    </ContactStyles>
+      <div>
+      {
+        isPosting ? <SpinnerOverlay><SpinnerContainer /></SpinnerOverlay>
+          :
+          <ContactStyles>
+            <form onSubmit={submitForm}>
+            <input 
+              type="text" 
+              name="email" 
+              value={ email } 
+              placeholder='Email Address'
+              onChange={ handleChange }
+            />
+            <input 
+              type="text" 
+              name="user" 
+              value= { user}
+              placeholder='Enter your name'
+              onChange={ handleChange }
+            />
+          <textarea 
+            type="text" 
+            name="message" 
+            value={ message } 
+            placeholder='Type your message'
+            onChange={ handleChange }
+          />
+          <input type="submit" value='Submit'/>
+        </form>
+        <Notification notification= {showNotification}>Message sent</Notification>
+      </ContactStyles>
+      }
+    </div>
   )
 
 }

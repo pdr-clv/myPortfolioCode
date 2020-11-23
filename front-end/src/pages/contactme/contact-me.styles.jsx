@@ -8,9 +8,19 @@ export const ContactStyles = styled.div`
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  display:flex;
+  flex-direction: column;
   form {
     padding: 50px;
     display:flex;
     flex-direction:column;
   }
+`;
+
+export const Notification = styled.p`
+  /*padding: 10px;*/
+  overflow:hidden;
+  background-color: green;
+  color: white;
+  height: ${({ notification }) => notification ? '100%' : '0'};
 `;
