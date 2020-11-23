@@ -16,11 +16,3 @@ export const ContactStyles = styled.div`
     flex-direction:column;
   }
 `;
-
-export const Notification = styled.p`
-  /*padding: 10px;*/
-  overflow:hidden;
-  background-color: green;
-  color: white;
-  height: ${({ notification }) => notification ? '100%' : '0'};
-`;

@@ -1,18 +1,22 @@
 import React, {useState} from 'react';
 import axios from 'axios';
-import {ContactStyles, Notification} from './contact-me.styles.jsx';
+import {ContactStyles} from './contact-me.styles.jsx';
 //import WithSpinner from '../../components/with-spinner/with-spinner.component';
 import { SpinnerContainer, SpinnerOverlay } from '../../components/with-spinner/with-spinner.styles';
 
+import { useToasts } from 'react-toast-notifications';
+
+
 const ContactPage = () => {
 
-  const [messageContent,setMessageContent] = useState({
+  const innerMessageContent = {
     email:'',
     user:'',
     message:'',
-    isPosting: false,
-    showNotification: false
-  });
+    isPosting: false
+  }
+
+  const [messageContent,setMessageContent] = useState(innerMessageContent);
 
   const handleChange = (event) => {
     const {name,value} = event.target;
@@ -20,7 +24,9 @@ const ContactPage = () => {
     setMessageContent({...messageContent,[name]:value});
   };
 
-  const { email, user, message, isPosting, showNotification } = messageContent;
+  const { addToast } = useToasts();
+
+  const { email, user, message, isPosting } = messageContent;
 
   const submitForm = async (e) =>{
     setMessageContent({...messageContent, isPosting: true });
@@ -37,11 +43,18 @@ const ContactPage = () => {
     
     if (reqResult.status === 200) {
       console.log(reqResult);
-      setMessageContent({...messageContent, isPosting: false, showNotification:true });
+      setMessageContent(innerMessageContent);
+      addToast('Message was succesfully sent', {
+        appearance: 'success',
+        autoDismiss: true,
+      });
 
     } else {
       setMessageContent({...messageContent, isPosting: false });
-      alert('It ocurred an error. Message not sent');
+      addToast('A fatal error ocurred', {
+        appearance: 'error',
+        autoDismiss: true,
+      });
     }
   };
 
@@ -51,6 +64,7 @@ const ContactPage = () => {
         isPosting ? <SpinnerOverlay><SpinnerContainer /></SpinnerOverlay>
           :
           <ContactStyles>
+          
             <form onSubmit={submitForm}>
             <input 
               type="text" 
@@ -75,7 +89,6 @@ const ContactPage = () => {
           />
           <input type="submit" value='Submit'/>
         </form>
-        <Notification notification= {showNotification}>Message sent</Notification>
       </ContactStyles>
       }
     </div>
