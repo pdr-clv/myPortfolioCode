@@ -29,6 +29,12 @@ const textContainerStyles = css`
   &:focus ~ label {
     ${shrinkLabelStyles};
   }
+  @media screen and (max-width: 487px) {
+    width:94%;
+  }
+  @media screen and (max-width: 330px) {
+    width:92%;
+  }
 `;
 
 export const GroupContainer = styled.div`

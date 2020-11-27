@@ -37,42 +37,19 @@ export const FooterElement = styled.div`
   }
 `;
 
-export const SocialLinks = styled.div`
-  width:85%;
-  margin: auto;
-  display:flex;
-  justify-content: space-around;
-
-  a {
-    font-size: 1.8em;
-    color: rgb(255,103,0);
-    
-    @media screen and (max-width: 670px) {
-      font-size: 1.5em;
-    }
-  }
-
-  a:hover {
-    color: grey;
-  }
-
-  @media screen and (max-width: 425px) {
-    width:95%;
-  }
-`;
-
 export const LinksFooter = styled.div`
   display:flex;
   flex-direction: column;
 `;
 export const CopyrightDiv = styled.div`
+  font-size: 0.8em;
   margin: 15px 0;
   display:flex;
   width: 100%;
   justify-content: center;
   
   @media screen and (max-width: 670px) {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 `;
 

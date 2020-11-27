@@ -8,13 +8,30 @@ export const FormStyles = styled.form`
   box-shadow: 0 0 20px 0px rgb(0,0,0);
   width: 70%;
   margin: 40px auto;
+  @media screen and (max-width: 768px) {
+    width:85%;
+  }
+
+  @media screen and (max-width: 576px) {
+    width:90%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width:95%;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding: 5px;
+  }
 `;
 
 export const SpanCounter = styled.span`
   //we place in the right.
   display:flex;
   justify-content:flex-end;
-  color: orange;
+  color: grey;
   font-weight: bold;
   font-size: 0.6em;
   padding: 5px;
@@ -35,12 +52,16 @@ export const SubmitInput= styled.input`
   padding: 10px 25px; 
   color: black;
   border: none;
-  border-bottom: solid 1px rgb(255,103,0); 
+  border-bottom: solid 2px rgb(255,103,0); 
   cursor: pointer;
 
   :hover{
     color: white;
     background:  rgb(255,103,0);
-    border-bottom: solid 1px orange;
+    border-bottom: solid 2px orange;
+  }
+
+  @media screen and (max-width: 576px) {
+    width:100%;
   }
 `;

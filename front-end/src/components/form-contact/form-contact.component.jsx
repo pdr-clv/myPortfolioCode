@@ -32,11 +32,11 @@ const FormContact = () => {
   const { email, user, message, charLimit, messageCharLimit, isPosting } = messageContent;
 
   const submitForm = async (e) =>{
-    //start spinner with isPosting set to true, until axios request is completed done.
+    
     e.preventDefault();
-
-    if (email.length || user.length || message.length === 0 ) {
-      addToast('Please fill all fields.',{
+    //Validation if statements
+    if (email.length === 0 || user.length === 0 || message.length === 0 ) {
+      addToast('Please, all fields are required.',{
         appearance: 'error',
         autoDismiss: true
       });
@@ -51,14 +51,14 @@ const FormContact = () => {
       return;
     }
 
-    if (email.length || user.length > charLimit ) {
+    if (email.length > charLimit || user.length > charLimit ) {
       addToast(`Fields Email and Name must be below ${charLimit} characters`, {
         appearance: 'error',
         autoDismiss: true,
       });
       return;
     } 
-
+    //Axios request. Start spinner with isPosting set to true, until axios request is completely done.
     setMessageContent({...messageContent, isPosting: true });
     try {
       const reqResult = await axios({
@@ -72,7 +72,6 @@ const FormContact = () => {
       });
       
       if (reqResult.status === 200) {
-        console.log(reqResult);
         setMessageContent(innerMessageContent);
         addToast(reqResult.data.message, {
           appearance: reqResult.data.status,
@@ -117,7 +116,6 @@ const FormContact = () => {
             onChange={ handleChange }
           />
           <TextArea
-            type="text" 
             name="message" 
             value={ message } 
             label='Message'
@@ -125,7 +123,7 @@ const FormContact = () => {
           />
           <SpanCounter>Characters: {message.length}/{messageCharLimit}</SpanCounter>
           <SubmitDiv>
-            <SubmitInput type="submit" value='Submit'/>
+            <SubmitInput type="submit" value='Send'/>
           </SubmitDiv> 
         </FormStyles>
     }

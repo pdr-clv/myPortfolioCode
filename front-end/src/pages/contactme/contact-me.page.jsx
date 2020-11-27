@@ -7,7 +7,9 @@ import SocialLinks from '../../components/social/social.component';
 import {
   ContactStyles,
   PageContainer,
-  SocialContainer
+  SocialContainer,
+  InfoDiv,
+  InfoDetail
 } from './contact-me.styles.jsx';
 
 
@@ -25,10 +27,32 @@ const ContactPage = () => {
         <h1>Contact</h1>
         <p>For all enquiries, email me filling the form bellow.</p>
         <FormToasted placealert='top-center' timedismiss={10000} />
-        <h4>Follow me in social network</h4>
+        <p>Follow me in social network</p>
         <SocialContainer>
           <SocialLinks />
         </SocialContainer>
+        <InfoDiv>
+          <InfoDetail>
+            <p>Address:</p>
+            <p>Planernaya Ulitsa D14 K.2</p>
+          </InfoDetail>
+          <InfoDetail>
+            <p>My CV:</p>
+            <p>Here it is my C.V.</p>
+          </InfoDetail>
+          <InfoDetail>
+            <p>Nationality:</p>
+            <p>Spanish</p>
+          </InfoDetail>
+          <InfoDetail>
+            <p>Degree:</p>
+            <p>Physics</p>
+          </InfoDetail>
+          <InfoDetail>
+            <p>Age:</p>
+            <p>43 years</p>
+          </InfoDetail>
+        </InfoDiv>
       </PageContainer>
     </ContactStyles>
   )

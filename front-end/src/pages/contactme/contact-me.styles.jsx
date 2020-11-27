@@ -15,6 +15,14 @@ export const PageContainer = styled.div`
     color: rgba(256,256,256,0.8);
     font-size: 0.8em;
   }
+
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 576px) {
+    width: 96%;
+  }
 `;
 
 export const ContactStyles = styled.div`
@@ -30,5 +38,27 @@ export const ContactStyles = styled.div`
 
 export const SocialContainer = styled.div`
   width: 50%;
+  margin: 30px auto;
+
+  @media screen and (max-width: 500px) {
+    width: 90%;
+  }
+`;
+
+export const InfoDiv = styled.div`
+  width: 60%;
   margin: auto;
+`;
+
+export const InfoDetail = styled.div`
+  display: flex;
+  justify-content:space-evenly;
+  p{
+    width: 48%;
+    text-align:left;
+    margin: 0;
+    &:nth-child(1) {
+      text-align: right;
+    }
+  }
 `;
