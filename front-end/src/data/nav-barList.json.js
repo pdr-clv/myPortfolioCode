@@ -1,10 +1,20 @@
 export const navBarContent = [
-    {name:'home', 
-    linkTo:''},
-    {name:'about', 
-    linkTo:'about'},
-    {name:'skills', 
-    linkTo:'skills'},
+  {
+    name:'home', 
+    linkTo:''
+  },
+  {
+    name:'about', 
+    linkTo:'about'
+  },
+  {
+    name:'skills', 
+    linkTo:'skills'
+  },
+  {
+    name:'contact',
+    linkTo: 'contactme'
+  }
 ];
 
 export const socialLinksContent = [

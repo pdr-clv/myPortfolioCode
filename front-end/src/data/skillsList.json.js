@@ -8,7 +8,7 @@ const skillsList = [{
   },
   {
     name: 'BackEnd',
-    skills: [{iconFontawesome:'fab fa-node', name: 'node', subSkills:['Express', 'Mongoose', 'npm Packages']},
+    skills: [{iconFontawesome:'fab fa-node', name: 'node', subSkills:['Express', 'Mongoose', 'npm Packages','NodeMailer','Pug']},
       {name: 'MongoDB', subSkills:['API','CRUD','Aggregation']},
       {name:'PHP', iconFontawesome:'fab fa-php', subSkills:['Form Validation', 'Ajax', 'FPDF', 'Reports']},
       {name:'Firebase', subSkills:['CRUD','userAuth']},

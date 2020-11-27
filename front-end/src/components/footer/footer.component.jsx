@@ -1,10 +1,10 @@
 import React from 'react';
-import { navBarContent, socialLinksContent } from '../../data/nav-barList.json.js';
+import { navBarContent } from '../../data/nav-barList.json.js';
+import SocialLinks from '../social/social.component';
 
 import { 
   FooterStyles, 
-  FooterElement, 
-  SocialLinks, 
+  FooterElement,
   LinksFooter,
   FooterContainer,
   CopyrightDiv, 
@@ -29,20 +29,7 @@ const FooterComponent = () => {
         </FooterElement>
         <FooterElement>
           <h4>FOLLOW ME </h4>
-          <SocialLinks>
-            {
-              socialLinksContent.map((element, key) => 
-                <a 
-                  key={key} 
-                  href={`${element.linkTo}`}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <i className={`${element.icon}`} />
-                </a>
-              )
-            }
-          </SocialLinks>
+          <SocialLinks />
         </FooterElement>
       </FooterContainer>
       <CopyrightDiv>© 2020 Copyright: Pedro Portfolio</CopyrightDiv>

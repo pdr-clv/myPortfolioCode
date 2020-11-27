@@ -13,7 +13,7 @@ exports.sendEmail = async (req, res, next) => {
     .status(200)
     .json({
       status: 'success',
-      message: 'Message sent correctly to admin'    
+      message: 'Message has been successfully sent'    
     });
   } catch (err) {
     res

@@ -7,7 +7,7 @@ const MainPage = () =>{
   //This is for footer links, if we click on them, automatically will scrollTo top.
   useEffect(() => {
     window.scrollTo(0, 0)
-  });
+  },[]);
   return(
   <div>
   <HomePage/>

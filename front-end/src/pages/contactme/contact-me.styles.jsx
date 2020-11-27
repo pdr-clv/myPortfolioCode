@@ -1,5 +1,22 @@
 import styled from 'styled-components';
 
+export const PageContainer = styled.div`
+  text-align: justify;
+  background-color:rgba(256,256,256,0.1);
+  width:70%;
+  margin: 55px auto;
+  min-height: 100vh;
+  
+  h1, h4, p{
+    text-align: center;
+    color: orange;
+  }
+  p {
+    color: rgba(256,256,256,0.8);
+    font-size: 0.8em;
+  }
+`;
+
 export const ContactStyles = styled.div`
   font-size:1em;
   min-height:550px;
@@ -8,11 +25,10 @@ export const ContactStyles = styled.div`
   display:flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  display:flex;
   flex-direction: column;
-  form {
-    padding: 50px;
-    display:flex;
-    flex-direction:column;
-  }
+`;
+
+export const SocialContainer = styled.div`
+  width: 50%;
+  margin: auto;
 `;
