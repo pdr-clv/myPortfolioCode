@@ -17,7 +17,7 @@ const textContainerStyles = css`
   font-size: 16px;
   padding: 10px;
   display: block;
-  width: 96%;
+  width: 100%;
   border: none;
   border-bottom: 1px solid ${mainColor};
   margin: 15px 0;
@@ -28,12 +28,6 @@ const textContainerStyles = css`
 
   &:focus ~ label {
     ${shrinkLabelStyles};
-  }
-  @media screen and (max-width: 487px) {
-    width:94%;
-  }
-  @media screen and (max-width: 330px) {
-    width:92%;
   }
 `;
 

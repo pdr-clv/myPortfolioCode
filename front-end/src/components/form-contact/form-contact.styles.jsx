@@ -14,16 +14,16 @@ export const FormStyles = styled.form`
 
   @media screen and (max-width: 576px) {
     width:90%;
-    padding: 20px;
+    padding: 25px 10px;
   }
 
   @media screen and (max-width: 500px) {
     width:95%;
-    padding: 10px;
   }
 
   @media screen and (max-width: 400px) {
-    padding: 5px;
+    width: 98%;
+    padding: 20px 5px;
   }
 `;
 

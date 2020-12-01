@@ -1,6 +1,7 @@
 import styled  from 'styled-components';
 
 export const AboutPageStyles = styled.div`
+  padding: 40px 0;
   min-height:100vh;
   background-color: black;
   background-image: url('https://res.cloudinary.com/dg5pircnj/image/upload/v1597479070/PortfolioApp/cover-picture_tp3d0m.jpg');
@@ -20,13 +21,26 @@ export const PageContainer = styled.div`
   margin-right:30px;
   background-color:rgba(256,256,256,0.1);
   width:70%;
-  ul{
-    margin-right:20px;
-  }
   h1{
     text-align: center;
     color: orange;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-right: 0;
+    font-size:0.9em;
+    width:90%;
+  }
+`;
+
+export const PageContent = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+
+  ul{
+    margin-right:20px;
+  }
+
   p {
     width:95%;
     margin:auto;
@@ -39,22 +53,10 @@ export const PageContainer = styled.div`
       padding: 2px;
       text-decoration: none;
 
-
       &:hover{
         background-color:black;
         color:orange;
       }
     }
-
-  }
-
-  @media screen and (max-width: 768px) {
-    margin-right: 0;
-    font-size:0.9em;
-    width:90%;
   }
 `;
-
-
-
-

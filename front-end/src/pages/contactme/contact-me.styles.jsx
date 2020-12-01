@@ -44,21 +44,3 @@ export const SocialContainer = styled.div`
     width: 90%;
   }
 `;
-
-export const InfoDiv = styled.div`
-  width: 60%;
-  margin: auto;
-`;
-
-export const InfoDetail = styled.div`
-  display: flex;
-  justify-content:space-evenly;
-  p{
-    width: 48%;
-    text-align:left;
-    margin: 0;
-    &:nth-child(1) {
-      text-align: right;
-    }
-  }
-`;
