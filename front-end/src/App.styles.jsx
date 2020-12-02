@@ -13,5 +13,13 @@ export const AppStyles = styled.div`
   h1,h2,h3,h4,h5,h6 {
   text-transform: uppercase;
   }
+
+  @media screen and (max-width: 500px) {
+    font-size:14px;
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size:12px;
+  }
 `;
 

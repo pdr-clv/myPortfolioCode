@@ -25,7 +25,7 @@ const InfoTable = () => {
         </tr>
         <tr>
           <td>Work permit</td>
-          <td>Europe Moscow</td>
+          <td>Europe, Moscow</td>
         </tr>
         <tr>
           <td>Degree</td>

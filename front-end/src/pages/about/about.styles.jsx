@@ -26,10 +26,13 @@ export const PageContainer = styled.div`
     color: orange;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     margin-right: 0;
-    font-size:0.9em;
     width:90%;
+    margin: auto;
+  }
+  @media screen and (max-width: 720px) {
+    width:96%;
   }
 `;
 
@@ -58,5 +61,30 @@ export const PageContent = styled.div`
         color:orange;
       }
     }
+  }
+  @media screen and (max-width: 572px) {
+    flex-direction:column-reverse;
+  }
+`;
+
+export const AboutText = styled.div`
+  display:flex;
+  align-items: center;
+  width: 69%;
+  @media screen and (max-width: 800px) {
+    width: 59%;
+  }
+  @media screen and (max-width: 572px) {
+    width: 100%;
+  }
+`;
+
+export const AboutTable = styled.div`
+  width: 29%;
+  @media screen and (max-width: 800px) {
+    width: 39%;
+  }
+  @media screen and (max-width: 572px) {
+    width: 100%;
   }
 `;
