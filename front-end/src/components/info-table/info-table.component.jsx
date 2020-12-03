@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { TableStyles} from './info-table.styles';
+import { TableStyles } from './info-table.styles';
 
 const InfoTable = () => {
   return (
     <TableStyles>
-      <caption><img src='https://res.cloudinary.com/dg5pircnj/image/upload/v1597479069/PortfolioApp/profile-picture_wneqqc.jpg' alt=''/>Pedro Calvo Herranz</caption>
+      <caption><img src='https://res.cloudinary.com/dg5pircnj/image/upload/v1597479069/PortfolioApp/profile-picture_wneqqc.jpg' alt='' />Pedro Calvo Herranz</caption>
       <tbody>
         <tr>
           <td>Address</td>
@@ -41,7 +41,7 @@ const InfoTable = () => {
         </tr>
         <tr>
           <td>IT courses</td>
-          <td>HTML(2006) Access mySQL/Oracle React Node.js+MongoDB </td>
+          <td>HTML(2006) Access(2008) mySQL/Oracle(2013) React(2020) Node.js+MongoDB(2020) </td>
         </tr>
       </tbody>
     </TableStyles>

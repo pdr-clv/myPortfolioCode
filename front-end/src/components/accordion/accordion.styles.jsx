@@ -57,6 +57,11 @@ export const AccordionContent = styled.div`
   max-height: ${({open}) => open ? '100vh' : '0'};
   overflow: hidden;
   transition: max-height 0.5s ease;
+
+  p {
+    margin: 2px;
+  }
+
   @media screen and (max-width: 800px) {
     max-height: ${({open}) => open ? '150vh' : '0'};
   }

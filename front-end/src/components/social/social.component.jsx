@@ -1,8 +1,9 @@
 import React from 'react';
-import { socialLinksContent } from '../../data/nav-barList.json';
+import { socialLinksContent} from '../../data/nav-barList.json';
 
 import {
-  SocialIcons, 
+  SocialIcons,
+  IconLinks 
 } from './social.styles';
 
 const SocialLinks = () => {
@@ -10,14 +11,14 @@ const SocialLinks = () => {
     <SocialIcons>
       {
         socialLinksContent.map((element, key) => 
-          <a 
+          <IconLinks 
             key={key} 
             href={`${element.linkTo}`}
             target='_blank'
             rel='noopener noreferrer'
           >
             <i className={`${element.icon}`} />
-          </a>
+          </IconLinks>
         )
       }
     </SocialIcons>
