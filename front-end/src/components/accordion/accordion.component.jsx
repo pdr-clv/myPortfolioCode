@@ -40,7 +40,7 @@ const Accordion = () => {
           </AccordionButton>
           <AccordionContent key={index} open={open[index]}>
           {
-            element.accordionItems.map((accordionItem,indexp) => <p key = {indexp}>{accordionItem}</p>)
+            element.accordionItems.map((accordionItem,indexp) => <p key = {indexp} dangerouslySetInnerHTML={{__html: `${accordionItem}`}}></p>)
           }
           </AccordionContent>
           </div>)})

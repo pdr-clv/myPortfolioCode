@@ -18,15 +18,6 @@ export const AppStyles = styled.div`
     margin-bottom:5px;
   }
 
-  /*a {
-    color: orange;
-    font-size: 0.9em;
-
-    :hover {
-      color:rgb(255,103,0);
-    }
-  }*/
-
   @media screen and (max-width: 500px) {
     font-size:14px;
   }

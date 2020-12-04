@@ -16,7 +16,7 @@ export const TableStyles = styled.table`
   }
 
   td {
-    padding: 5px;
+    padding: 2px 4px;
     text-align: left;
   }
 

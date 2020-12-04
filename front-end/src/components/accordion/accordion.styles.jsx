@@ -62,6 +62,14 @@ export const AccordionContent = styled.div`
     margin: 2px;
   }
 
+  a {
+    color: orange;
+    font-size: 0.9em;
+
+    :hover {
+      color:rgb(255,103,0);
+    }
+  }
   @media screen and (max-width: 800px) {
     max-height: ${({open}) => open ? '150vh' : '0'};
   }

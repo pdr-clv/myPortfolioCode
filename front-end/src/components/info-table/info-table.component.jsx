@@ -1,8 +1,25 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 
 import { TableStyles } from './info-table.styles';
 
 const InfoTable = () => {
+
+  const [age,setAge] = useState(0);
+
+  useEffect (()=>{
+    const dateToday = getAge();
+    setAge(dateToday);
+  },[]);
+
+  const getAge = () => {
+  
+    const birthday = new Date(1977, 4, 19);
+    const diff_ms = Date.now() - birthday.getTime();
+    const age_dt = new Date(diff_ms); 
+
+    return Math.abs(age_dt.getUTCFullYear() - 1970);
+  }
+
   return (
     <TableStyles>
       <caption><img src='https://res.cloudinary.com/dg5pircnj/image/upload/v1597479069/PortfolioApp/profile-picture_wneqqc.jpg' alt='' />Pedro Calvo Herranz</caption>
@@ -13,7 +30,7 @@ const InfoTable = () => {
         </tr>
         <tr>
           <td>Age</td>
-          <td>43</td>
+          <td>{age} years</td>
         </tr>
         <tr>
           <td>Birth</td>
@@ -32,7 +49,7 @@ const InfoTable = () => {
           <td>Physics(2000)</td>
         </tr>
         <tr>
-          <td>MbA</td>
+          <td>MBA</td>
           <td>Logistics(2005)</td>
         </tr>
         <tr>

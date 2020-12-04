@@ -26,7 +26,7 @@ export const PageContainer = styled.div`
     color: orange;
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1220px) {
     margin-right: 0;
     width:90%;
     margin: auto;
@@ -40,18 +40,27 @@ export const PageContent = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  ul{
-    margin-right:20px;
+  a {
+    color: orange;
+    font-size: 0.9em;
+
+    :hover {
+      color:rgb(255,103,0);
+    }
   }
 
-  p {
+  p,h4 {
     width:95%;
     margin:auto;
     margin-bottom:10px;
 
   }
-  @media screen and (max-width: 572px) {
+
+  @media screen and (max-width: 599px) {
     flex-direction:column-reverse;
+    p,h4 {
+      width: 98%;
+    }
   }
 `;
 
@@ -59,20 +68,48 @@ export const AboutText = styled.div`
   display:flex;
   align-items: center;
   width: 69%;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 950px) {
     width: 59%;
   }
-  @media screen and (max-width: 572px) {
+  @media screen and (max-width: 677px) {
+    width: 54%;
+  }
+  @media screen and (max-width: 599px) {
     width: 100%;
   }
 `;
 
 export const AboutTable = styled.div`
   width: 29%;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 950px) {
     width: 39%;
   }
-  @media screen and (max-width: 572px) {
+  @media screen and (max-width: 677px) {
+    width: 44%;
+  }
+  @media screen and (max-width: 599px) {
     width: 100%;
+  }
+`;
+
+export const LinkCV = styled.div`
+  display:block;
+  text-align: center;
+  padding: 25px;
+
+  a{
+    padding: 15px;
+    background-color:orange;
+    color:white;
+    text-decoration:none;
+    border-radius: 5px;
+    @media screen and (max-width: 630px) {
+      padding: 10px;
+    }
+    :hover {
+      background-color:rgb(255,103,0);
+      color:white;
+    }
+
   }
 `;
