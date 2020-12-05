@@ -11,10 +11,9 @@ app.use(express.json( { limit: '10kb'}));
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(`${__dirname}/front-end/build`));
-/* //just in case we need it in production.
   app.get('*', (req,res) => {
     res.sendFile(`${__dirname}/front-end/build/index.html`);
-  }); */
+  });
 }
 
 /* //example of middleware.
