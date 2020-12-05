@@ -48,7 +48,7 @@ const projectsList = [{
   { 
     name: 'Language School',
     imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1598887500/PortfolioApp/Language-school_ro16yn.jpg',
-    description: 'Simple and didactical responsive website, for test purposes. Static, pure frontend, which contains only HTML5 and CSS, and just a bit of JS for the nav. My first website to practice all frontend fundamentals.',
+    description: 'Simple and didactic responsive website, for test purposes. Static, pure frontend, which contains only HTML5 and CSS, and just a bit of JS for the nav. My first website to practice all frontend fundamentals.',
     projectLinks: {    
       webLink:'https://pdr-clv-language-school.glitch.me/',
       gitCode:'https://github.com/pdr-clv/language-school'

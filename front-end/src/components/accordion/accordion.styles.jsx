@@ -52,7 +52,6 @@ export const AccordionButton = styled.button`
 `;
 
 export const AccordionContent = styled.div`
-  background-color:rgba(255,103,0,0.1);
   padding: 0 18px;
   max-height: ${({open}) => open ? '100vh' : '0'};
   overflow: hidden;
@@ -72,6 +71,7 @@ export const AccordionContent = styled.div`
   }
   @media screen and (max-width: 800px) {
     max-height: ${({open}) => open ? '150vh' : '0'};
+    padding: 0 10px;
   }
 
   @media screen and (max-width: 359px) {

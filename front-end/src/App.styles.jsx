@@ -25,5 +25,18 @@ export const AppStyles = styled.div`
   @media screen and (max-width: 320px) {
     font-size:12px;
   }
+
+  @media screen and (min-width:1600px) {
+    font-size: 20px;
+  }
+
+  @media screen and (min-width:1920px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width:2200px) {
+    font-size: 26px;
+  }
+
 `;
 

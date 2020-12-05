@@ -23,6 +23,11 @@ export const PageContainer = styled.div`
   @media screen and (max-width: 576px) {
     width: 96%;
   }
+
+  @media screen and (min-width: 1600px) {
+    min-height: 85vh;
+    width: 85%;
+  }
 `;
 
 export const ContactStyles = styled.div`

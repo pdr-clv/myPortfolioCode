@@ -25,7 +25,7 @@ const ContactPage = () => {
         <h1>Contact</h1>
         <p>For all enquiries, email me filling the form bellow.</p>
         <FormToasted placealert='top-center' timedismiss={10000} />
-        <p>Follow me in social network</p>
+        <p>Also, follow and contact me in social networks</p>
         <SocialContainer>
           <SocialLinks />
         </SocialContainer>

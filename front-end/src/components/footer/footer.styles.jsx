@@ -22,6 +22,11 @@ export const FooterContainer = styled.div`
     flex-direction: column;
     justify-content: center;
   }
+
+  @media screen and (min-width:1600px) {
+    width: 85%;
+    min-height:15vh;
+  }
 `;
 
 export const FooterElement = styled.div`

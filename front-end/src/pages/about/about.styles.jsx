@@ -6,12 +6,34 @@ export const AboutPageStyles = styled.div`
   background-color: black;
   background-image: url('https://res.cloudinary.com/dg5pircnj/image/upload/v1597479070/PortfolioApp/cover-picture_tp3d0m.jpg');
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: auto; /* Resize the background image to cover the entire container */
+  background-size: auto 1200px; /* Resize the background image to cover the entire container */
   display:flex;
   justify-content: flex-end;
   align-items:center;
   @media screen and (max-width: 768px) {
     justify-content: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    background-image: unset;
+  }
+
+  @media screen and (min-width: 1600px) {
+    min-height: 85vh;
+    background-size: auto 1400px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    background-size: auto 1600px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    background-size: auto 1800px;
+  }
+
+  @media screen and (min-width: 2400px) {
+    min-height: 85vh;
+    background-size: auto 2200px;
   }
 
 `;
@@ -33,6 +55,17 @@ export const PageContainer = styled.div`
   }
   @media screen and (max-width: 720px) {
     width:96%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    width: 70%;
+    margin-right: 60px;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 60%;
+    margin-right: 90px;
   }
 `;
 

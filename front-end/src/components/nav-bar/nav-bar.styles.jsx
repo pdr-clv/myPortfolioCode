@@ -45,6 +45,11 @@ export const NavContainer = styled.div`
   width:95%;
 
   }
+
+  @media screen and (min-width:1600px) {
+    max-width: unset;
+    width: 85%;
+  }
 `;
 
 export const LogoContainer = styled.div`

@@ -21,6 +21,13 @@ export const Skill = styled.div`
   width:145px;
   display:flex;
   flex-direction: column;
+  @media screen and (min-width: 1400px) {
+    width:200px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    width: 250px;
+  }
 
 `;
 
