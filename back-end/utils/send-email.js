@@ -4,11 +4,10 @@ const nodemailer = require('nodemailer');
 const sendEmail = async (options) => {
   // 1) Create a transporter. It can be gmail Service or any mail service.
   const transporter = nodemailer.createTransport({
-    host: process.env.EMAIL_HOST,
-    port: process.env.EMAIL_PORT,
+    service: 'gmail',
     auth: {
-      user: process.env.EMAIL_USERNAME,
-      pass: process.env.EMAIL_PASSWORD,
+      user: process.env.EMAIL_USERNAME_GMAIL,
+      pass: process.env.EMAIL_PASSWORD_GMAIL,
     },
     //activate in gmail "less secure app" option
   });
