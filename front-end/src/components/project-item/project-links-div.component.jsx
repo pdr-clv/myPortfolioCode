@@ -32,7 +32,12 @@ const ProjectLinks = (props) => {
             }
           }><i className="far fa-images"></i> Pics</span>
         }
-        return <a href={projectLinks[key]} key={key} ><i className="fab fa-github"></i> Code</a>;
+        return <a 
+          href={projectLinks[key]} 
+          key={key} 
+          target='_blank'
+          rel='noopener noreferrer'
+        ><i className="fab fa-github"></i> Code</a>;
       })      
     }
   </ProjectLinksDiv>

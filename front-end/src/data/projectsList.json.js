@@ -1,4 +1,14 @@
 const projectsList = [{ 
+  name: 'Booking tours site',
+  imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1608748689/PortfolioApp/natours-min_rldiey.jpg',
+  description: "E-commerce site to buy and book your tours. Built an API with secure user authentication, error handling, password recovery, upload files and maps like special backend features. Practical case for Udemy course Node.js + MongoDB.",
+  projectLinks: {    
+    webLink:'https://natours-for-travelers.herokuapp.com/',
+    gitCode:'https://github.com/pdr-clv/natours-nodejs'
+  } ,
+  skills: ['node','express','mongodb','nodemailer','crypto','pug','Stripe','maps']
+  },
+  { 
   name: 'facebook clone',
   imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1605005777/PortfolioApp/facebook-clone-img_nhxvu3.jpg',
   description: "Please, don't tell to Mark Zuckerberg, but this is a Facebook clone. User auth by Firebase. Log in, add posts and read other user posts. Practical case to improve react skills.",
