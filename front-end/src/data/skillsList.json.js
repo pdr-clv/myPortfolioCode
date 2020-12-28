@@ -2,14 +2,14 @@ const skillsList = [{
   name: 'FrontEnd',
   skills: [{iconFontawesome: 'fab fa-html5', name: 'Html'},
     {iconFontawesome: 'fab fa-css3-alt', name: 'Css', subSkills:['Bootstrap','Responsive', 'Sass']},
-    {iconFontawesome: 'fab fa-js-square', name: 'Js', subSkills:['ES6','Promises','API fetch']},
-    {name: 'React', iconFontawesome: 'fab fa-react', subSkills:['Redux','Hooks','Jest','Styled-components']},
+    {iconFontawesome: 'fab fa-js-square', name: 'Js', subSkills:['ES6','Promises','API fetch','Axios','Parcel-Bundler']},
+    {name: 'React', iconFontawesome: 'fab fa-react', subSkills:['Redux','Redux-thunk','Hooks','Jest','Styled-components']},
     {name: 'jQuery', subSkills:['Ajax Request']}]
   },
   {
     name: 'BackEnd',
     skills: [{iconFontawesome:'fab fa-node', name: 'node', subSkills:['Express', 'Mongoose', 'npm Packages','NodeMailer','Pug']},
-      {name: 'MongoDB', subSkills:['API','CRUD','Aggregation']},
+      {name: 'MongoDB', subSkills:['API','CRUD','Aggregation','Middleware']},
       {name:'PHP', iconFontawesome:'fab fa-php', subSkills:['Form Validation', 'Ajax', 'FPDF', 'Reports']},
       {name:'Firebase', subSkills:['CRUD','userAuth']},
       {name: 'mySQL', subSkills:['CRUD','Aggregation']}]

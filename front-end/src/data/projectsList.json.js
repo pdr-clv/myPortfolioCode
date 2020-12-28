@@ -6,7 +6,17 @@ const projectsList = [{
     webLink:'https://natours-for-travelers.herokuapp.com/',
     gitCode:'https://github.com/pdr-clv/natours-nodejs'
   } ,
-  skills: ['node','express','mongodb','nodemailer','crypto','pug','Stripe','maps']
+  skills: ['node','express','mongodb','nodemailer','crypto','pug','Stripe','mapbox','parcel']
+  },
+  { 
+  name: 'Post your memories',
+  imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1609162929/PortfolioApp/post-memories_tcyrrn.jpg',
+  description: "Post your memories, tags and picture, you can like or delete them. Full stuck MERN app within much react-redux, redux-thunk and material ui library to make faster front-end design",
+  projectLinks: {    
+      webLink:'https://memories-posts.herokuapp.com/',
+      gitCode:'https://github.com/pdr-clv/memories-MERN'
+    } ,
+  skills: ['MongoDB','react','redux','hooks','redux-thunk','material-ui','responsive']
   },
   { 
   name: 'facebook clone',
@@ -15,7 +25,7 @@ const projectsList = [{
   projectLinks: {    
     webLink:'https://socialnetwork-clone.herokuapp.com/',
     gitCode:'https://github.com/pdr-clv/fb-clone'
-  } ,
+    },
   skills: ['react','redux','hooks','styled components','firebase auth','firebase store']
   },
   { 
@@ -51,7 +61,7 @@ const projectsList = [{
     imgUrl: 'https://res.cloudinary.com/dg5pircnj/image/upload/v1598883960/PortfolioApp/RecyclingV2_zxrz5f.jpg',
     description: 'Record and print all your invoices for "Recycling Ltd." company. Website with backend PHP + mySQL. AJAX Requests and Pagination. FPDF to create PDF invoices, and also Bootstrap for CSS styles.',
     projectLinks: {    
-      webLink:'https://reciclajes-eng.herokuapp.com/'
+      webLink:'https://recycling-app-sample.herokuapp.com/'
     } ,
     skills: ['PHP','mySQL','pagination','JQuery','Ajax','Bootstrap', 'PDF Reports']
   },
